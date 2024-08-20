@@ -1,0 +1,88 @@
+/* media-queries.css */
+
+/* Estilos para Telas Grandes */
+@media (min-width: 1024px) {
+    .hero-section {
+        flex-direction: row;
+    }
+
+    .hero-section h1 {
+        font-size: 4rem;
+    }
+
+    .hero-section p {
+        font-size: 1.5rem;
+    }
+
+    .testimonial {
+        flex: 0 0 33.3333%;
+    }
+}
+
+/* Estilos para Tablets */
+@media (max-width: 1024px) {
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav a {
+        margin: 10px 0;
+    }
+
+    .hero-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-section p {
+        font-size: 1rem;
+    }
+
+    .testimonial {
+        flex: 0 0 50%;
+    }
+}
+
+/* Estilos para Smartphones */
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+
+    .hero-section p {
+        font-size: 0.9rem;
+    }
+
+    .testimonial {
+        flex: 0 0 100%;
+        margin: 5px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a {
+        font-size: 1rem;
+    }
+
+    .hero-section h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero-section p {
+        font-size: 0.8rem;
+    }
+
+    .testimonial {
+        font-size: 0.8rem;
+    }
+}

@@ -1,0 +1,315 @@
+@font-face {
+    font-family: 'Unytour Black';
+    src: url(fontes/Fontspring-DEMO-unytour-boldcondensed.otf) format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+ 
+
+body {
+    font-family: 'Josefin Sans','Unytour Black', sans-serif;
+    color: #241F1F; /* Preto */
+    background-color: #fdfdfd;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+img {
+    height: 
+    150px;
+}
+
+header {
+    background-color:#d1b54c;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f2ba1307; 
+    height: 38px;
+}
+
+.logo img {
+    height: 50px; /* Ajuste a altura conforme necessário */
+    width: auto; /* Mantém a proporção da imagem */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #241F1F; /* Preto */
+    font-weight: bold;
+    margin: 0 15px;
+    padding: 10px;
+    transition: color 0.3s;
+    font-family: 'Unytour', sans-serif;
+}
+
+nav a:hover {
+    color: #F2BB13; /* Dourado */
+}
+
+#hero {
+    background-image: url(Imagens/law3.jpg);
+    color: #fdfbfb;
+    padding: 100px 20px 50px;
+    margin-top: 60px;
+}
+
+.hero-image{
+    max-width: 100%;
+    height: auto;
+}
+
+.hero-text{
+    max-width: 500px;
+    margin-left: 20px;
+}
+
+#hero h1 {
+    color: #ffffff; /* Dourado */
+    font-family: 'Unytour', sans-serif;
+}
+
+#hero p {
+    color: #fffbfb;
+}
+
+#hero button {
+    background-color: #d1b54c; /* Dourado */
+    color: #000000;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-family: 'Unytour', sans-serif;
+}
+
+#hero button:hover {
+    background-color: #4a0000;
+}
+
+#services {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+#services h2 {
+    color: #00291b; /* Verde escuro */
+    font-family: 'Unytour', sans-serif;
+    margin-bottom: 30px;
+}
+
+.carousel {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.carousel-wrapper {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.carousel-item h3 {
+    color: #00291b; /* Verde escuro */
+    font-family: 'Unytour', sans-serif;
+    margin-bottom: 15px;
+}
+
+.carousel-item p {
+    color: #333;
+    font-family: 'Josefin Sans', sans-serif;
+    line-height: 1.6;
+}
+h2{
+    font-size: 45px;
+    font-family: 'Unytour';
+    color: #0e0e0e;
+}
+#about, #testimonials, #contact {
+    padding: 20px 20px;
+    text-align: center;
+    background-color: #d1b54c;
+}
+
+.about-content {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.profile {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    text-align: center;
+    padding: 20px;
+    margin: 20px;
+    flex: 1;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 8px;
+    padding: 10px;
+
+}
+
+.profile:hover {
+    transform: scale(1.05); /* Aumenta o profile em 5% */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Adiciona sombra */
+}
+
+
+.profile img {
+    width: 100%;
+    height: auto;
+    border-radius: 50px;
+
+}
+
+.profile-info {
+    margin-top: 15px;
+}
+
+.profile-info h3 {
+    color: #241F1F; /* Preto */
+    font-family: 'Unytour', sans-serif;
+    margin: 10px 0;
+}
+
+.profile-info p,
+.profile-info ul,
+.profile-info h4 {
+    color: #333;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.profile-info h4 {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.profile-info ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    text-align: left;
+}
+
+#testimonials {
+    padding: 50px 20px;
+    background-color: #d1b54c;
+    text-align: center;
+    overflow: hidden; /* Esconde a parte que sai da tela */
+}
+
+.carousel2 {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel-wrapper2 {
+    display: flex;
+    width: calc(250px * 10); /* Tamanho da largura considerando 5 itens e 5 clones */
+    animation: move 35s linear infinite; /* Define a animação para mover o carrossel */
+}
+
+.testimonial {
+    min-width: 280px;
+    margin: 0 10px;
+    background-color: #fcfcfc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonial img {
+    width: 255px;
+    height: 300px;
+    border-radius: 12%;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonial:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 1px 16px rgba(0, 0, 0, 0.2);
+}
+
+.testimonial:hover img {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes move {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+}
+
+.social-icons a {
+    margin: 0 15px; /* Espaçamento entre os ícones */
+}
+
+.social-icons img {
+    height: 55px; /* Ajuste a altura dos ícones conforme necessário */
+    width: auto; /* Mantém a proporção da imagem */
+    transition: opacity 0.3s ease;
+}
+
+.social-icons img:hover {
+    opacity: 0.7; /* Efeito de hover nos ícones */
+}
+
+footer {
+    background-color: #d1b54c; /* Preto */
+    color: #0e0e0e;
+    text-align: center;
+    padding: 10px 20px;
+}
+
+.redis{
+    height: 100px;
+    
+}
